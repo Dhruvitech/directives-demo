@@ -1,0 +1,15 @@
+<h1>Angular Directives Demo</h1>
+
+<div class="menu">
+    <button (click)="page='structural'">Structural</button>
+    <button (click)="page='attribute'">Attribute</button>
+    <button (click)="page='component'">Component</button>
+    <button (click)="page='custom'">Custom</button>
+</div>
+
+<div class="content">
+    <app-structural *ngIf="page === 'structural'"></app-structural>
+    <app-attribute *ngIf="page === 'attribute'"></app-attribute>
+    <app-component-demo *ngIf="page === 'component'"></app-component-demo>
+    <app-custom *ngIf="page === 'custom'"></app-custom>
+</div>

@@ -1,0 +1,9 @@
+.on {
+  color: green;
+  font-weight: bold;
+}
+
+.off {
+  color: red;
+  font-weight: bold;
+}

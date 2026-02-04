@@ -1,0 +1,19 @@
+<h2>Products</h2>
+<br>
+
+<button (click)="show = !show">Toggle List</button>
+<br>
+
+<!-- ngIf + ngFor -->
+<ul *ngIf="show">
+  <li *ngFor="let i of items">{{ i }}</li>
+</ul>
+<br>
+<!-- ngSwitch -->
+<div [ngSwitch]="status">
+  <p *ngSwitchCase="'pending'">Status: Pending</p>
+  <p *ngSwitchCase="'done'">Status: Done</p>
+</div>
+<br>
+
+<button (click)="status = 'done'">Change Status</button>

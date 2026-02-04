@@ -1,0 +1,13 @@
+<h2>Status</h2>
+<br>
+
+<p
+  [ngClass]="active ? 'on' : 'off'"
+  
+  [ngStyle]="{ 'font-size': active ? '30px' : '20px' }"
+>
+  {{ active ? 'Active' : 'Inactive' }}
+</p>
+<br>
+
+<button (click)="active = !active">Toggle</button>
